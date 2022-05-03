@@ -2,7 +2,7 @@
 
 ReactJS Basic Resume Generator it will genrate Resume in few minutes on your requirements.
 
-[Visit Now](https://resumegenx.netlify.app/) 🚀
+[Visit Now](https://resume-gen-62c98.web.app/) 🚀
 
 ## 🖥️ Tech Stack
 
