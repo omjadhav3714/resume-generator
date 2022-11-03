@@ -13,6 +13,8 @@ export const ResumeProvider = ({ children }) => {
 
     const [theme, setTheme] = useState('purple.400');
 
+    const [font, setFont] = useState('Roboto');
+
     const [about, setAbout] = useState({
         name: "",
         role: "",
@@ -135,7 +137,7 @@ export const ResumeProvider = ({ children }) => {
     //       })
     // }, [theme]);
 
-    const value = { about, setAbout, educationList, setEducationList, skills, setSkills, workList, setWorkList, projects, setProjects, printElem, theme, setTheme };
+    const value = { about, setAbout, educationList, setEducationList, skills, setSkills, workList, setWorkList, projects, setProjects, printElem, theme, setTheme , font, setFont };
 
     return (
         <ResumeContext.Provider value={value}>

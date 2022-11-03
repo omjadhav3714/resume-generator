@@ -14,6 +14,7 @@ import ThemeSelect from './Theme/ThemeSelect';
 import { useReactToPrint } from 'react-to-print';
 import { useResume } from '../Context';
 import { MdOutlineFileDownload } from 'react-icons/md';
+import FontSelect from './Theme/FontSelect';
 
 const Main = () => {
 
@@ -37,6 +38,7 @@ const Main = () => {
 
                 <Stack justifyContent={'space-between'} pt={4} direction={{ base: 'column', sm: 'row' }}>
                     <ThemeSelect />
+                    <FontSelect/>
                     <Button rightIcon={<MdOutlineFileDownload />} onClick={handlePrint} colorScheme={'purple'}>Download</Button>
                 </Stack>
 

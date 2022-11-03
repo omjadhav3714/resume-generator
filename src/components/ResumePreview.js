@@ -17,7 +17,7 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 
 const ResumePreview = () => {
-  const { theme, about, educationList, skills, workList, projects, printElem } =
+  const { theme, about, educationList, skills, workList, projects, printElem , font} =
     useResume();
   const imgStyle = {
     width: "115px",
@@ -37,6 +37,7 @@ const ResumePreview = () => {
         shadow={"md"}
         overflow={"hidden"}
         minH={"100vh"}
+        fontFamily={font}
       >
         <div ref={printElem}>
           <HStack>
@@ -50,10 +51,10 @@ const ResumePreview = () => {
             )}
 
             <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
-              <Heading as="h4" size="md">
+              <Heading as="h4" size="md" >
                 {about.name ? about.name : "Your Name"}
               </Heading>
-              <Text color={"gray.500"}>
+              <Text color={"gray.500"} >
                 {about.role ? about.role : "Full Stack Web and App Developer"}
               </Text>
             </VStack>
@@ -67,19 +68,19 @@ const ResumePreview = () => {
           >
             <HStack spacing={1}>
               <MdMail />{" "}
-              <Text>{about.email ? about.email : "you@gmail.com"}</Text>
+              <Text >{about.email ? about.email : "you@gmail.com"}</Text>
             </HStack>
             <HStack spacing={1}>
               <MdLocalPhone />{" "}
-              <Text>{about.phone ? about.phone : "+919209522812"}</Text>
+              <Text >{about.phone ? about.phone : "+919209522812"}</Text>
             </HStack>
             <HStack spacing={1}>
               <MdLocationPin />{" "}
-              <Text>{about.address ? about.address : "Mumbai, MH"}</Text>
+              <Text >{about.address ? about.address : "Mumbai, MH"}</Text>
             </HStack>
             <HStack spacing={1}>
               <RiLinkedinBoxFill />{" "}
-              <Text as="a" href={about.linkedin}>
+              <Text  as="a" href={about.linkedin}>
                 LinkedIn
               </Text>
             </HStack>
@@ -124,10 +125,10 @@ const ResumePreview = () => {
                         justifyContent={"space-between"}
                         w={"full"}
                       >
-                        <Text>
+                        <Text >
                           {startYr ? startYr : 2015} - {endYr ? endYr : 2019}
                         </Text>
-                        <Text>{grade ? grade : "10 CGPA"}</Text>
+                        <Text >{grade ? grade : "10 CGPA"}</Text>
                       </HStack>
                     </VStack>
                   );
